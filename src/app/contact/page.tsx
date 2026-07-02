@@ -113,7 +113,7 @@ export default function Contact() {
 
               <iframe
                 title="Starline Constructions Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.0271437543486!2d76.29669227454527!3d9.972879873549437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d3afb43d38d%3A0x4e2c29a50feaccfa!2sPanampilly%20Nagar%2C%20Kochi%2C%20Kerala%20682036!5e0!3m2!1sen!2sin!4v1719929800000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=Starline+constructions,Marian+Abode,Parambithara+Rd,Panampilly+Nagar,Kochi,Kerala&output=embed"
                 width="100%"
                 height="280"
                 style={{ border: 0, display: "block", filter: "grayscale(30%) contrast(1.05)" }}
