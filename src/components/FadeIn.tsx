@@ -8,6 +8,7 @@ interface FadeInProps {
   delay?: number;
   direction?: "up" | "down" | "left" | "right" | "none";
   className?: string;
+  id?: string;
 }
 
 export function FadeIn({
@@ -15,6 +16,7 @@ export function FadeIn({
   delay = 0,
   direction = "up",
   className = "",
+  id,
 }: FadeInProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-10% 0px" });
@@ -38,9 +40,12 @@ export function FadeIn({
 
   return (
     <motion.div
+      id={id}
       ref={ref}
       initial={{ opacity: 0, ...offset }}
-      animate={isInView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, ...offset }}
+      animate={
+        isInView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, ...offset }
+      }
       transition={{
         duration: 0.8,
         ease: [0.25, 0.1, 0.25, 1],
