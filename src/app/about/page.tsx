@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { FadeIn, StaggerChildren, FadeInChild } from "@/components/FadeIn";
 
 export default function About() {
   return (
     <main className="flex-grow pt-20">
       {/* Hero Section */}
       <section className="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden bg-surface-container-low border-b border-outline-variant/30">
-        <div className="relative z-10 text-center px-margin-mobile md:px-0">
+        <FadeIn className="relative z-10 text-center px-margin-mobile md:px-0">
           <span className="font-label-md text-label-md text-secondary uppercase tracking-[0.3em] block mb-4 font-bold">
             Established 1998
           </span>
@@ -13,12 +14,12 @@ export default function About() {
             Building Tomorrow's Heritage
           </h1>
           <div className="w-24 h-1 bg-secondary mx-auto"></div>
-        </div>
+        </FadeIn>
       </section>
 
       {/* The Starline Legacy */}
       <section className="py-24 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        <div className="space-y-8">
+        <FadeIn direction="right" className="space-y-8">
           <span className="font-label-md text-secondary uppercase tracking-[0.2em] block">Our Story</span>
           <h2 className="font-headline-lg text-headline-lg text-on-surface font-bold">The Starline Legacy</h2>
           <div className="w-16 h-0.5 bg-secondary"></div>
@@ -46,9 +47,9 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </FadeIn>
 
-        <div className="relative group p-4">
+        <FadeIn direction="left" delay={0.2} className="relative group p-4">
           {/* Offset Border Frame */}
           <div className="absolute -inset-1 border border-secondary/30 translate-x-6 translate-y-6 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500 rounded-lg"></div>
           <div className="relative overflow-hidden aspect-[4/5] bg-surface-container shadow-2xl rounded-lg">
@@ -58,7 +59,7 @@ export default function About() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwxb0bi9kKxEr-xamPgP9XLsMFxMjaYeveUi8VR44EDRJQbhnQ7d1PBEUXGi2fQV7maRPK8WHtcskM-sqEwiDGmNCqhhbkhwqkSQdlkH_Kd48sOQVCT7fCEWmMgA3PboxmyKXPABThgkCfCHISovJvs__ilqi8ad0GqDla6UCc6b8-Qw7C_R3TEF2pZ0RSgk1zKyOGnrIgzoFfDyggiRonWtLTvluotDIDI7ByQTLLqiDgFXREBiQaKm4tLNt0gBXmmOSPlf4tQFs"
             />
           </div>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Vision & Mission (Bento Style) */}
@@ -66,7 +67,7 @@ export default function About() {
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             {/* Vision (Col Span 7) */}
-            <div className="md:col-span-7 bg-white p-8 md:p-12 atmospheric-shadow flex flex-col justify-center border-l-4 border-secondary rounded-xl">
+            <FadeIn direction="right" className="md:col-span-7 bg-white p-8 md:p-12 atmospheric-shadow flex flex-col justify-center border-l-4 border-secondary rounded-xl">
               <span className="material-symbols-outlined text-secondary text-5xl mb-6 self-start">
                 visibility
               </span>
@@ -75,10 +76,10 @@ export default function About() {
                 "To be the global benchmark for sustainable architectural luxury, where every structure we build becomes
                 a landmark of human ingenuity and environmental harmony."
               </p>
-            </div>
+            </FadeIn>
 
             {/* Mission (Col Span 5) */}
-            <div className="md:col-span-5 bg-secondary text-on-secondary p-8 md:p-12 flex flex-col justify-center shadow-lg rounded-xl">
+            <FadeIn direction="left" delay={0.2} className="md:col-span-5 bg-secondary text-on-secondary p-8 md:p-12 flex flex-col justify-center shadow-lg rounded-xl">
               <span className="material-symbols-outlined text-on-secondary/80 text-5xl mb-6 self-start">
                 rocket_launch
               </span>
@@ -87,23 +88,25 @@ export default function About() {
                 To deliver world-class construction solutions through innovative engineering, ethical practices, and a
                 relentless focus on client satisfaction, ensuring that Starline remains a name trusted for generations.
               </p>
-            </div>
+            </FadeIn>
           </div>
         </div>
       </section>
 
       {/* Foundation of Trust */}
       <section className="py-32 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
-        <span className="font-label-md text-secondary uppercase tracking-[0.2em] block mb-4">Our Values</span>
-        <h2 className="font-headline-lg text-headline-lg font-bold mb-4">Foundation of Trust</h2>
-        <div className="w-16 h-0.5 bg-secondary mx-auto mb-6"></div>
-        <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto mb-16">
-          Our core values aren't just words on a wall; they are the pillars that support every project we undertake.
-        </p>
+        <FadeIn className="mb-16">
+          <span className="font-label-md text-secondary uppercase tracking-[0.2em] block mb-4">Our Values</span>
+          <h2 className="font-headline-lg text-headline-lg font-bold mb-4">Foundation of Trust</h2>
+          <div className="w-16 h-0.5 bg-secondary mx-auto mb-6"></div>
+          <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto mb-16">
+            Our core values aren't just words on a wall; they are the pillars that support every project we undertake.
+          </p>
+        </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <StaggerChildren staggerDelay={0.15} className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Transparency */}
-          <div className="group p-8 bg-surface hover:bg-white transition-all duration-300 atmospheric-shadow rounded-xl border border-transparent hover:border-outline-variant/20">
+          <FadeInChild direction="up" className="group p-8 bg-surface hover:bg-white transition-all duration-300 atmospheric-shadow rounded-xl border border-transparent hover:border-outline-variant/20">
             <div className="w-16 h-16 bg-surface-container flex items-center justify-center rounded-full mx-auto mb-6 group-hover:bg-secondary transition-colors duration-300">
               <span className="material-symbols-outlined text-secondary group-hover:text-white text-3xl">
                 account_balance
@@ -114,10 +117,10 @@ export default function About() {
               We believe in open communication. From budgets to timelines, our clients are kept informed at every stage of
               the building process.
             </p>
-          </div>
+          </FadeInChild>
 
           {/* Sustainability */}
-          <div className="group p-8 bg-surface hover:bg-white transition-all duration-300 atmospheric-shadow rounded-xl border border-transparent hover:border-outline-variant/20">
+          <FadeInChild direction="up" className="group p-8 bg-surface hover:bg-white transition-all duration-300 atmospheric-shadow rounded-xl border border-transparent hover:border-outline-variant/20">
             <div className="w-16 h-16 bg-surface-container flex items-center justify-center rounded-full mx-auto mb-6 group-hover:bg-secondary transition-colors duration-300">
               <span className="material-symbols-outlined text-secondary group-hover:text-white text-3xl">
                 eco
@@ -128,10 +131,10 @@ export default function About() {
               Building for the future means protecting the present. We integrate eco-friendly materials and energy-efficient
               designs into every legacy we build.
             </p>
-          </div>
+          </FadeInChild>
 
           {/* Innovation */}
-          <div className="group p-8 bg-surface hover:bg-white transition-all duration-300 atmospheric-shadow rounded-xl border border-transparent hover:border-outline-variant/20">
+          <FadeInChild direction="up" className="group p-8 bg-surface hover:bg-white transition-all duration-300 atmospheric-shadow rounded-xl border border-transparent hover:border-outline-variant/20">
             <div className="w-16 h-16 bg-surface-container flex items-center justify-center rounded-full mx-auto mb-6 group-hover:bg-secondary transition-colors duration-300">
               <span className="material-symbols-outlined text-secondary group-hover:text-white text-3xl">
                 lightbulb
@@ -142,14 +145,14 @@ export default function About() {
               The status quo is our starting point. We utilize cutting-edge construction technology to solve complex
               architectural challenges.
             </p>
-          </div>
-        </div>
+          </FadeInChild>
+        </StaggerChildren>
       </section>
 
       {/* CTA Section */}
       <section className="relative py-32 overflow-hidden bg-on-background text-white">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(119,90,25,0.15),transparent)] pointer-events-none"></div>
-        <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+        <FadeIn direction="up" className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
           <h2 className="font-display-lg text-4xl md:text-5xl lg:text-[64px] font-bold mb-8 leading-tight">
             Ready to Build Your Legacy?
           </h2>
@@ -169,7 +172,7 @@ export default function About() {
               </button>
             </Link>
           </div>
-        </div>
+        </FadeIn>
       </section>
     </main>
   );

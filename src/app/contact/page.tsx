@@ -1,3 +1,5 @@
+import { FadeIn, StaggerChildren, FadeInChild } from "@/components/FadeIn";
+
 export default function Contact() {
   const whatsappUrl =
     "https://wa.me/919446090003?text=Hi%2C%20I'm%20interested%20in%20discussing%20a%20construction%2Farchitecture%20project%20with%20Starline%20Constructions.";
@@ -6,17 +8,21 @@ export default function Contact() {
     <main className="flex-grow pt-20 bg-surface">
       {/* ── Hero Text ─────────────────────────────────────────── */}
       <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-16 pb-4">
-        <span className="font-label-md text-xs text-secondary uppercase tracking-[0.3em] block mb-3 font-bold">
-          Crafting Excellence
-        </span>
-        <h1 className="font-display-lg text-[38px] md:text-5xl lg:text-[56px] font-bold text-on-surface leading-tight mb-4">
-          Start Your Legacy
-        </h1>
-        <p className="font-body-md text-on-surface-variant max-w-md leading-relaxed text-sm">
-          Every great structure begins with a conversation. Let us bring your
-          architectural vision to life with precision, luxury, and timeless
-          craftsmanship.
-        </p>
+        <FadeIn>
+          <span className="font-label-md text-xs text-secondary uppercase tracking-[0.3em] block mb-3 font-bold">
+            Crafting Excellence
+          </span>
+          <h1 className="font-display-lg text-[38px] md:text-5xl lg:text-[56px] font-bold text-on-surface leading-tight mb-4">
+            Start Your Legacy
+          </h1>
+        </FadeIn>
+        <FadeIn delay={0.1}>
+          <p className="font-body-md text-on-surface-variant max-w-md leading-relaxed text-sm">
+            Every great structure begins with a conversation. Let us bring your
+            architectural vision to life with precision, luxury, and timeless
+            craftsmanship.
+          </p>
+        </FadeIn>
       </section>
 
       {/* ── Two-Column Layout ─────────────────────────────────── */}
@@ -27,7 +33,7 @@ export default function Contact() {
           <div className="space-y-6">
 
             {/* Contact Info Card */}
-            <div className="bg-white border border-outline-variant/30 rounded-xl p-8 space-y-7 atmospheric-shadow">
+            <FadeIn direction="left" delay={0.2} className="bg-white border border-outline-variant/30 rounded-xl p-8 space-y-7 atmospheric-shadow">
               {/* Address */}
               <div className="flex gap-4 items-start">
                 <div className="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center shrink-0 mt-0.5">
@@ -95,10 +101,10 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-            </div>
+            </FadeIn>
 
             {/* ── Google Map ───────────────────────────────────── */}
-            <div className="relative rounded-xl overflow-hidden border border-outline-variant/30 atmospheric-shadow">
+            <FadeIn direction="left" delay={0.3} className="relative rounded-xl overflow-hidden border border-outline-variant/30 atmospheric-shadow">
               {/* Map label overlay */}
               <div className="absolute bottom-0 left-0 z-10 m-3">
                 <div className="bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-md">
@@ -121,11 +127,11 @@ export default function Contact() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-            </div>
+            </FadeIn>
           </div>
 
           {/* ── RIGHT: WhatsApp Enquiry Card ─────────────────── */}
-          <div className="bg-white border border-outline-variant/30 rounded-xl p-8 md:p-10 atmospheric-shadow flex flex-col">
+          <FadeIn direction="right" delay={0.2} className="bg-white border border-outline-variant/30 rounded-xl p-8 md:p-10 atmospheric-shadow flex flex-col h-full">
             {/* Icon */}
             <div className="w-16 h-16 bg-surface-container-low rounded-xl flex items-center justify-center mb-6">
               <span className="material-symbols-outlined text-secondary text-3xl">
@@ -142,8 +148,7 @@ export default function Contact() {
               construction queries.
             </p>
 
-            {/* Feature list */}
-            <div className="space-y-5 mb-10 flex-1">
+            <StaggerChildren delay={0.2} staggerDelay={0.15} className="space-y-5 mb-10 flex-1">
               {[
                 {
                   icon: "bolt",
@@ -161,7 +166,7 @@ export default function Contact() {
                   desc: "Chat directly with senior management and design leads.",
                 },
               ].map(({ icon, title, desc }) => (
-                <div key={title} className="flex gap-3 items-start">
+                <FadeInChild key={title} direction="up" className="flex gap-3 items-start">
                   <span className="material-symbols-outlined text-secondary text-xl mt-0.5 shrink-0">
                     {icon}
                   </span>
@@ -173,9 +178,9 @@ export default function Contact() {
                       {desc}
                     </p>
                   </div>
-                </div>
+                </FadeInChild>
               ))}
-            </div>
+            </StaggerChildren>
 
             {/* CTA button */}
             <a
@@ -193,7 +198,7 @@ export default function Contact() {
             <p className="text-center text-[10px] text-on-surface-variant uppercase tracking-widest mt-3">
               Typical response time: under 10 minutes
             </p>
-          </div>
+          </FadeIn>
         </div>
       </section>
     </main>

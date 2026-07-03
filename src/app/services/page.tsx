@@ -1,5 +1,5 @@
-
 import Link from "next/link";
+import { FadeIn, StaggerChildren, FadeInChild } from "@/components/FadeIn";
 
 export default function Services() {
   const servicesList = [
@@ -57,7 +57,7 @@ export default function Services() {
     <main className="flex-grow pt-20">
       {/* Hero Section */}
       <section className="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden bg-surface-container-low border-b border-outline-variant/30">
-        <div className="relative z-10 text-center px-margin-mobile md:px-0">
+        <FadeIn className="relative z-10 text-center px-margin-mobile md:px-0">
           <span className="font-label-md text-label-md text-secondary uppercase tracking-[0.3em] block mb-4 font-bold">
             Our Expertise
           </span>
@@ -65,7 +65,7 @@ export default function Services() {
             High-End Construction Services
           </h1>
           <div className="w-24 h-1 bg-secondary mx-auto"></div>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Services Grid */}
@@ -74,8 +74,9 @@ export default function Services() {
           {servicesList.map((service, index) => {
             const isEven = index % 2 === 0;
             return (
-              <div
+              <FadeIn
                 key={service.id}
+                direction={isEven ? "right" : "left"}
                 id={service.id}
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${
                   isEven ? "" : "lg:flex-row-reverse"
@@ -130,7 +131,7 @@ export default function Services() {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </FadeIn>
             );
           })}
         </div>
@@ -138,7 +139,7 @@ export default function Services() {
 
       {/* CTA Section */}
       <section className="py-24 bg-surface-container-low">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center max-w-3xl">
+        <FadeIn direction="up" className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center max-w-3xl">
           <h2 className="font-display-lg text-headline-lg font-bold mb-6">Need a Specialized Building Solution?</h2>
           <p className="font-body-md text-on-surface-variant mb-10 leading-relaxed">
             Whether you are looking to reconstruct an existing property, design a custom eco-friendly interior layout,
@@ -149,7 +150,7 @@ export default function Services() {
               Contact our Experts
             </button>
           </Link>
-        </div>
+        </FadeIn>
       </section>
     </main>
   );

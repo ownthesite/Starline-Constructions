@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FadeIn, StaggerChildren, FadeInChild } from "@/components/FadeIn";
 
 interface Project {
   id: string;
@@ -89,7 +90,7 @@ export default function Projects() {
     <main className="flex-grow pt-20">
       {/* Hero Section */}
       <section className="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden bg-surface-container-low border-b border-outline-variant/30">
-        <div className="relative z-10 text-center px-margin-mobile md:px-0">
+        <FadeIn className="relative z-10 text-center px-margin-mobile md:px-0">
           <span className="font-label-md text-label-md text-secondary uppercase tracking-[0.3em] block mb-4 font-bold">
             Our Portfolio
           </span>
@@ -97,7 +98,7 @@ export default function Projects() {
             Iconic Landmarks Built
           </h1>
           <div className="w-24 h-1 bg-secondary mx-auto"></div>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Gallery Filter & Grid */}
@@ -137,10 +138,11 @@ export default function Projects() {
         </div>
 
         {/* Grid Container */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <StaggerChildren className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <div
+            <FadeInChild
               key={project.id}
+              direction="up"
               className="group relative aspect-[4/3] rounded-xl overflow-hidden shadow-xl bg-surface-container animate-in fade-in zoom-in-95 duration-300"
             >
               <img
@@ -159,9 +161,9 @@ export default function Projects() {
                   {project.category}
                 </span>
               </div>
-            </div>
+            </FadeInChild>
           ))}
-        </div>
+        </StaggerChildren>
       </section>
     </main>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FadeIn, StaggerChildren, FadeInChild } from "@/components/FadeIn";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
-          <div className="max-w-2xl">
+          <FadeIn className="max-w-2xl">
             <span className="inline-block py-1 px-3 bg-secondary-fixed text-on-secondary-fixed font-label-md text-[12px] uppercase tracking-widest mb-6 rounded-sm">
               Established Excellence
             </span>
@@ -42,7 +43,7 @@ export default function Home() {
                 </button>
               </Link>
             </div>
-          </div>
+          </FadeIn>
         </div>
 
         {/* Stats overlay (Desktop) */}
@@ -70,26 +71,26 @@ export default function Home() {
 
       {/* Stats Section (Mobile & Tablet) */}
       <section className="lg:hidden bg-surface-container-lowest py-16 px-margin-mobile border-b border-outline-variant/20">
-        <div className="grid grid-cols-3 gap-4 text-center">
-          <div>
+        <StaggerChildren className="grid grid-cols-3 gap-4 text-center">
+          <FadeInChild direction="up">
             <span className="block font-display-lg text-2xl md:text-3xl text-secondary font-bold">25+</span>
             <span className="font-label-md text-[9px] md:text-[10px] uppercase tracking-widest text-on-surface-variant">
               Years Exp
             </span>
-          </div>
-          <div>
+          </FadeInChild>
+          <FadeInChild direction="up">
             <span className="block font-display-lg text-2xl md:text-3xl text-secondary font-bold">150+</span>
             <span className="font-label-md text-[9px] md:text-[10px] uppercase tracking-widest text-on-surface-variant">
               Projects
             </span>
-          </div>
-          <div>
+          </FadeInChild>
+          <FadeInChild direction="up">
             <span className="block font-display-lg text-2xl md:text-3xl text-secondary font-bold">12M</span>
             <span className="font-label-md text-[9px] md:text-[10px] uppercase tracking-widest text-on-surface-variant">
               Sq. Ft
             </span>
-          </div>
-        </div>
+          </FadeInChild>
+        </StaggerChildren>
       </section>
 
 
@@ -97,17 +98,17 @@ export default function Home() {
       {/* Iconic Projects Showcase */}
       <section className="py-24 bg-on-background text-white">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="text-center mb-20">
+          <FadeIn className="text-center mb-20">
             <span className="font-label-md text-secondary uppercase tracking-[0.2em] block mb-4">Portfolio</span>
             <h2 className="font-display-lg text-headline-lg font-bold mb-6">Iconic Landmarks</h2>
             <div className="w-16 h-0.5 bg-secondary mx-auto mb-6"></div>
             <p className="text-white/60 font-body-md max-w-xl mx-auto">
               A selection of our most prestigious architectural contributions across the urban landscape of Kochi.
             </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[900px]">
+          </FadeIn>
+          <StaggerChildren staggerDelay={0.2} className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[900px]">
             {/* Project 1 */}
-            <div className="md:col-span-8 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
+            <FadeInChild direction="up" className="md:col-span-8 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
               <img
                 alt="Souparnika Anaswara Builders Project"
                 className="w-full h-full object-cover transition-transform duration-750 group-hover:scale-110"
@@ -117,10 +118,10 @@ export default function Home() {
                 <h3 className="font-headline-md text-white mb-2 text-2xl font-bold">Anaswara Souparnika</h3>
                 <p className="text-secondary font-label-md uppercase tracking-widest">Elamakkara, Kochi</p>
               </div>
-            </div>
+            </FadeInChild>
 
             {/* Project 2 */}
-            <div className="md:col-span-4 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
+            <FadeInChild direction="up" className="md:col-span-4 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
               <img
                 alt="Residential Villa Panampilly Nagar"
                 className="w-full h-full object-cover transition-transform duration-750 group-hover:scale-110"
@@ -130,10 +131,10 @@ export default function Home() {
                 <h3 className="font-headline-md text-white mb-2 text-2xl font-bold">Luxury Villa</h3>
                 <p className="text-secondary font-label-md uppercase tracking-widest">Panampilly Nagar</p>
               </div>
-            </div>
+            </FadeInChild>
 
             {/* Project 3 */}
-            <div className="md:col-span-4 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
+            <FadeInChild direction="up" className="md:col-span-4 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
               <img
                 alt="Parekkattu Plaza Project"
                 className="w-full h-full object-cover transition-transform duration-750 group-hover:scale-110"
@@ -143,10 +144,10 @@ export default function Home() {
                 <h3 className="font-headline-md text-white mb-2 text-2xl font-bold">Parekkattu Plaza</h3>
                 <p className="text-secondary font-label-md uppercase tracking-widest">Elamkulam, Ernakulam</p>
               </div>
-            </div>
+            </FadeInChild>
 
             {/* Project 4 */}
-            <div className="md:col-span-8 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
+            <FadeInChild direction="up" className="md:col-span-8 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
               <img
                 alt="BEO Software Park Building"
                 className="w-full h-full object-cover transition-transform duration-750 group-hover:scale-110"
@@ -156,15 +157,15 @@ export default function Home() {
                 <h3 className="font-headline-md text-white mb-2 text-2xl font-bold">BEO Software Park</h3>
                 <p className="text-secondary font-label-md uppercase tracking-widest">Kakkanad, Ernakulam</p>
               </div>
-            </div>
-          </div>
+            </FadeInChild>
+          </StaggerChildren>
         </div>
       </section>
 
       {/* Our Seamless Process */}
       <section className="py-24 bg-surface-container-low">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="max-w-3xl mb-16">
+          <FadeIn className="max-w-3xl mb-16">
             <span className="font-label-md text-secondary uppercase tracking-[0.2em] block mb-4">Workflow</span>
             <h2 className="font-headline-lg text-headline-lg text-on-surface mb-6 font-bold">Our Seamless Process</h2>
             <div className="w-16 h-0.5 bg-secondary mb-4"></div>
@@ -172,13 +173,13 @@ export default function Home() {
               We've refined our construction workflow over two decades to ensure maximum transparency and zero friction
               for our clients.
             </p>
-          </div>
+          </FadeIn>
           <div className="relative">
             {/* Progress Line */}
             <div className="hidden md:block absolute top-[24px] left-0 w-full h-[1px] bg-outline-variant/50 z-0"></div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+            <StaggerChildren delay={0.2} staggerDelay={0.15} className="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
               {/* Step 1 */}
-              <div className="flex flex-col">
+              <FadeInChild direction="up" className="flex flex-col">
                 <div className="w-12 h-12 bg-on-background text-white rounded-full flex items-center justify-center font-display-lg text-[20px] mb-8 ring-8 ring-surface-container-low font-bold">
                   01
                 </div>
@@ -188,9 +189,9 @@ export default function Home() {
                 <p className="text-on-surface-variant text-body-md leading-relaxed">
                   Understanding your vision, requirements, and budget through deep architectural dialogue.
                 </p>
-              </div>
+              </FadeInChild>
               {/* Step 2 */}
-              <div className="flex flex-col">
+              <FadeInChild direction="up" className="flex flex-col">
                 <div className="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-display-lg text-[20px] mb-8 ring-8 ring-surface-container-low font-bold">
                   02
                 </div>
@@ -200,9 +201,9 @@ export default function Home() {
                 <p className="text-on-surface-variant text-body-md leading-relaxed">
                   Creating detailed blueprints, 3D visualizations, and obtaining all necessary statutory approvals.
                 </p>
-              </div>
+              </FadeInChild>
               {/* Step 3 */}
-              <div className="flex flex-col">
+              <FadeInChild direction="up" className="flex flex-col">
                 <div className="w-12 h-12 bg-on-background text-white rounded-full flex items-center justify-center font-display-lg text-[20px] mb-8 ring-8 ring-surface-container-low font-bold">
                   03
                 </div>
@@ -212,9 +213,9 @@ export default function Home() {
                 <p className="text-on-surface-variant text-body-md leading-relaxed">
                   Groundbreaking and rigorous execution of structure and masonry under expert supervision.
                 </p>
-              </div>
+              </FadeInChild>
               {/* Step 4 */}
-              <div className="flex flex-col">
+              <FadeInChild direction="up" className="flex flex-col">
                 <div className="w-12 h-12 bg-on-background text-white rounded-full flex items-center justify-center font-display-lg text-[20px] mb-8 ring-8 ring-surface-container-low font-bold">
                   04
                 </div>
@@ -224,8 +225,8 @@ export default function Home() {
                 <p className="text-on-surface-variant text-body-md leading-relaxed">
                   Final quality audits, interior finishing, and the ceremonial delivery of your landmark property.
                 </p>
-              </div>
-            </div>
+              </FadeInChild>
+            </StaggerChildren>
           </div>
         </div>
       </section>
@@ -233,7 +234,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-24">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="bg-secondary p-12 md:p-24 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12 rounded-xl">
+          <FadeIn direction="up" className="bg-secondary p-12 md:p-24 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12 rounded-xl">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20"></div>
             <div className="relative z-10 max-w-xl">
               <h2 className="font-display-lg text-[32px] md:text-[40px] text-white leading-tight font-bold mb-6">
@@ -254,7 +255,7 @@ export default function Home() {
                 </button>
               </a>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </section>
     </main>
