@@ -46,7 +46,7 @@ export default function Contact() {
                     The Office
                   </p>
                   <p className="font-body-md text-on-surface text-sm leading-relaxed">
-                    2nd Floor, Marian Abode Putharickal,
+                    1st Floor, Marian Abode Putharickal,
                     <br />
                     Parambithara Road, Panampilly Nagar,
                     <br />
@@ -72,7 +72,7 @@ export default function Contact() {
                     href="tel:+919446090003"
                     className="font-body-md text-on-surface text-sm hover:text-secondary transition-colors"
                   >
-                    +91 94460 90003
+                    +91 94460 90003, +91 94460 90009
                   </a>
                   <p className="text-[10px] text-on-surface-variant mt-0.5 uppercase tracking-wider">
                     Available Mon – Sat, 9AM – 6PM
@@ -94,10 +94,10 @@ export default function Contact() {
                     Email Inquiry
                   </p>
                   <a
-                    href="mailto:info@starlineconstructions.com"
+                    href="mailto:starlineconstructions2017@gmail.com"
                     className="font-body-md text-on-surface text-sm hover:text-secondary transition-colors"
                   >
-                    info@starlineconstructions.com
+                    starlineconstructions2017@gmail.com
                   </a>
                 </div>
               </div>

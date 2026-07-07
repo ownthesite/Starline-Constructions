@@ -13,7 +13,7 @@ export default function Home() {
             className="w-full h-full bg-cover bg-center opacity-80"
             style={{
               backgroundImage:
-                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAzFdGNN9-vgdfc-PbSDtKgtWE-NMCmpfhqIjjiwOcJClNkn9_YUf-cFN7G0bGQ4rpGam46xZoI96yB-P818z5pL1G96wjwq9fe3TIHS_PSfT7xjOta1kV5ezyAZNNPjnt5bLF-NK6_lLXIEMdpAtvrckOUdZ-5wzTrXPQkFHbbGaiHLlgZYRFE3H7zT-0z1H8zuSumqVaUxCEYu9ByO3Pq8TLmfiGrmB8rMOvxTgMxqOGiOGBTLgnm1c0xIwRSWrx8K8dMleGh6Rw')",
+                "url('https://res.cloudinary.com/sorumlx6/image/upload/v1783454327/hero_wdzavf.webp')",
             }}
           ></div>
         </div>
@@ -29,7 +29,7 @@ export default function Home() {
             </h1>
             <p className="font-body-lg text-white/90 mb-10 max-w-lg leading-relaxed">
               Redefining the horizon of Kochi with architectural precision and unwavering commitment to quality. We
-              don't just build structures; we craft legacies.
+              don&apos;t just build structures; we craft legacies.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <Link href="/projects">
@@ -93,7 +93,64 @@ export default function Home() {
         </StaggerChildren>
       </section>
 
+      {/* Core Specializations Section */}
+      <section className="py-24 bg-surface-container-low border-b border-outline-variant/20">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+          <FadeIn className="mb-16">
+            <span className="inline-block py-1 px-3 bg-secondary-fixed text-on-secondary-fixed font-label-md text-[12px] uppercase tracking-widest mb-6 rounded-sm">
+              Specialized Expertise
+            </span>
+            <h2 className="font-display-lg text-3xl md:text-headline-lg text-on-surface font-bold">
+              Our Core Specializations
+            </h2>
+            <div className="w-16 h-0.5 bg-secondary mt-4"></div>
+          </FadeIn>
 
+          <StaggerChildren className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Piling Services Tile */}
+            <FadeInChild
+              direction="up"
+              className="bg-surface p-10 md:p-16 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-500 group rounded-xl"
+            >
+              <div className="mb-8">
+                <span className="material-symbols-outlined text-secondary text-[40px]">
+                  foundation
+                </span>
+              </div>
+              <h1 className="font-display-lg text-3xl md:text-4xl text-on-surface mb-6 font-extrabold">
+                Piling Services
+              </h1>
+              <p className="font-body-lg text-on-surface-variant leading-relaxed mb-8">
+                Expert foundation piling solutions tailored for any unique terrain. We utilize advanced
+                engineering and precision machinery to ensure your structure stands on a foundation of absolute
+                integrity and lifelong stability.
+              </p>
+              <div className="h-[1px] w-12 bg-secondary group-hover:w-full transition-all duration-500"></div>
+            </FadeInChild>
+
+            {/* Large-Scale Construction Tile */}
+            <FadeInChild
+              direction="up"
+              className="bg-surface p-10 md:p-16 border border-outline-variant/20 shadow-sm hover:shadow-xl transition-all duration-500 group rounded-xl"
+            >
+              <div className="mb-8">
+                <span className="material-symbols-outlined text-secondary text-[40px]">
+                  apartment
+                </span>
+              </div>
+              <h1 className="font-display-lg text-3xl md:text-4xl text-on-surface mb-6 font-extrabold">
+                Large-Scale Construction
+              </h1>
+              <p className="font-body-lg text-on-surface-variant leading-relaxed mb-8">
+                From commercial complexes to luxury residential landmarks, we manage large-scale projects with
+                architectural precision. Our decades of local expertise ensure seamless execution from
+                groundbreaking to final handover.
+              </p>
+              <div className="h-[1px] w-12 bg-secondary group-hover:w-full transition-all duration-500"></div>
+            </FadeInChild>
+          </StaggerChildren>
+        </div>
+      </section>
 
       {/* Iconic Projects Showcase */}
       <section className="py-24 bg-on-background text-white">
@@ -106,13 +163,13 @@ export default function Home() {
               A selection of our most prestigious architectural contributions across the urban landscape of Kochi.
             </p>
           </FadeIn>
-          <StaggerChildren staggerDelay={0.2} className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[900px]">
+          <StaggerChildren staggerDelay={0.2} className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[500px]">
             {/* Project 1 */}
             <FadeInChild direction="up" className="md:col-span-8 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
               <img
                 alt="Souparnika Anaswara Builders Project"
                 className="w-full h-full object-cover transition-transform duration-750 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQu5maQzl1-mff5pRxRLNenl6YfjVi7q8Ok8qFQV0Uvfph1Vh8yj6F9XL8X8-dKrPyoCj3bn8NRtvj5KLRg7O5Qxq-WrGHIaVQfDi-bZ1GFcdpIPBcKFlUuubRvF0ee83lPI2kzxhu11MIfU9-lOwCrCdpeWigZOELTohcrQ05XZu6ob3C0_GcsmWMsmrRed89XIvLOatFfmgdW1GESCbvYBPw3bV1I7Fh61T0UaTDK2deOd-orCLRIMm8rUGH1NqfCOA1x58aFVM"
+                src="https://res.cloudinary.com/sorumlx6/image/upload/v1783449291/Anasvara-Souparnika-Anaswvara-Builders-Elamakkara-Kochi_x065pm.webp"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
                 <h3 className="font-headline-md text-white mb-2 text-2xl font-bold">Anaswara Souparnika</h3>
@@ -123,39 +180,13 @@ export default function Home() {
             {/* Project 2 */}
             <FadeInChild direction="up" className="md:col-span-4 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
               <img
-                alt="Residential Villa Panampilly Nagar"
+                alt="Alpha Residence"
                 className="w-full h-full object-cover transition-transform duration-750 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI9wfXWIdA-Bx-LTcAPZO0lNGiIRhN13tX0egy8rkahHlXX1wfuVceOqFQR0Sbs6jPkcaHH_QjeV60c2OJeDK6kXU4bm4KHQtXSPyYmQlOkxVVk_84l6qtRy5utGbiFhtQK-lGh39VTys4Z3GnWo5GdkO8CTyo2hYiaF_PTQxjqb__Z5T-qmsBiOSaUVPzUrPL9SNt4VBH684qvVbD_NvkWwPeiDQaXJOwtDKRt_BkneKm-rdjoXVa32G_7gBHQKUPH4wwz4jBrSQ"
+                src="https://res.cloudinary.com/sorumlx6/image/upload/v1783449296/Ar._Mathew_Saira_Residential_Bldng_of_Mr._MC_Raju_r5shq0.webp"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
-                <h3 className="font-headline-md text-white mb-2 text-2xl font-bold">Luxury Villa</h3>
-                <p className="text-secondary font-label-md uppercase tracking-widest">Panampilly Nagar</p>
-              </div>
-            </FadeInChild>
-
-            {/* Project 3 */}
-            <FadeInChild direction="up" className="md:col-span-4 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
-              <img
-                alt="Parekkattu Plaza Project"
-                className="w-full h-full object-cover transition-transform duration-750 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKumx-l-GZGMpcrz6l7jST7kaRyAMlVz6j19bulJM0dItyu6RBH5wnct2gb6yAMSDThjLpsKmYAwTPiibgtvf4MnT7dmSEuBvM03sBkiSQ2-QT5ntae1QqI_Bzl6lu8WTxKcgIPX6EHghhfTwu-t4jBqfW98KvTCF_UIEdr7eV79eENl46k0rSn18XJej8XN0xsP72X8YiBNCC8x08EDJKLpxMD-KOWc8Qx7EIQ0L0o25WPMjAPHdhLhswVNZzMqAV4Tu0rGE6icE"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
-                <h3 className="font-headline-md text-white mb-2 text-2xl font-bold">Parekkattu Plaza</h3>
-                <p className="text-secondary font-label-md uppercase tracking-widest">Elamkulam, Ernakulam</p>
-              </div>
-            </FadeInChild>
-
-            {/* Project 4 */}
-            <FadeInChild direction="up" className="md:col-span-8 group relative overflow-hidden rounded-xl h-[300px] md:h-auto">
-              <img
-                alt="BEO Software Park Building"
-                className="w-full h-full object-cover transition-transform duration-750 group-hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5MLWeOyznAcBeRdldBJyt8WUqdmL7-pXDzoqQyslo1Vc6VYj4q6qzDWV2TMz3VyKZcJio-04PE2yFPpwR4iOPamP1CBnWGsfsHLqbdRJjgKUUgb0lvTNzxUsWBPQ-DY27MO6EvjFd50PNaRNaJ4sP37ndiUw8Zf7RiHtflVTGmNcFnJ1_ieJED8nJNvaYX4ARWPnIl-rVpI8LImtgHZII9EJwfPXdM5PsodZGeIBccG690EhrY2IQwyR2kJ81iRcZP2Eeitb1nro"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
-                <h3 className="font-headline-md text-white mb-2 text-2xl font-bold">BEO Software Park</h3>
-                <p className="text-secondary font-label-md uppercase tracking-widest">Kakkanad, Ernakulam</p>
+                <h3 className="font-headline-md text-white mb-2 text-2xl font-bold">Alpha Residence</h3>
+                <p className="text-secondary font-label-md uppercase tracking-widest">Panampilly Nagar, Kochi</p>
               </div>
             </FadeInChild>
           </StaggerChildren>
@@ -170,7 +201,7 @@ export default function Home() {
             <h2 className="font-headline-lg text-headline-lg text-on-surface mb-6 font-bold">Our Seamless Process</h2>
             <div className="w-16 h-0.5 bg-secondary mb-4"></div>
             <p className="font-body-md text-on-surface-variant">
-              We've refined our construction workflow over two decades to ensure maximum transparency and zero friction
+              We&apos;ve refined our construction workflow over two decades to ensure maximum transparency and zero friction
               for our clients.
             </p>
           </FadeIn>

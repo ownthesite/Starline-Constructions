@@ -1,55 +1,37 @@
 import Link from "next/link";
-import { FadeIn, StaggerChildren, FadeInChild } from "@/components/FadeIn";
+import { FadeIn } from "@/components/FadeIn";
 
 export default function Services() {
   const servicesList = [
     {
-      id: "residential",
-      title: "Residential Construction",
-      subtitle: "Bespoke Premium Homes",
+      id: "piling",
+      title: "Piling Services",
+      subtitle: "Structural Integrity",
       description:
-        "We specialize in designing and building high-end, custom-crafted villas and luxury residential spaces. From architectural layout to the final structural detail, we create homes that represent stability, exclusivity, and modern sophistication.",
-      icon: "home_work",
+        "Expert piling solutions tailored for Kerala's unique terrain. We utilize advanced machinery and specialized engineering techniques to ensure a rock-solid foundation for any structure, from coastal residences to inland high-rises.",
+      icon: "foundation",
       features: [
-        "Architectural Villa Crafting",
-        "Multi-Storey Premium Apartments",
-        "Custom Masonry & Wooden Detailing",
-        "Eco-Friendly Materials Integration",
+        "Hydraulic Rotary Piling",
+        "Bored Cast-in-Situ Piles",
+        "Terrain-Specific Ground Stabilization",
       ],
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAzFdGNN9-vgdfc-PbSDtKgtWE-NMCmpfhqIjjiwOcJClNkn9_YUf-cFN7G0bGQ4rpGam46xZoI96yB-P818z5pL1G96wjwq9fe3TIHS_PSfT7xjOta1kV5ezyAZNNPjnt5bLF-NK6_lLXIEMdpAtvrckOUdZ-5wzTrXPQkFHbbGaiHLlgZYRFE3H7zT-0z1H8zuSumqVaUxCEYu9ByO3Pq8TLmfiGrmB8rMOvxTgMxqOGiOGBTLgnm1c0xIwRSWrx8K8dMleGh6Rw",
+        "https://res.cloudinary.com/sorumlx6/image/upload/v1783454328/piling_ycifxt.webp",
     },
     {
-      id: "commercial",
-      title: "Commercial Engineering",
-      subtitle: "Corporate Hubs & Plazas",
+      id: "large-scale",
+      title: "Large-Scale Construction",
+      subtitle: "Commercial & Luxury",
       description:
-        "Our commercial services focus on constructing professional corporate headquarters, software parks, and modern business hubs. We ensure fast timelines, rigorous compliance, and structural integrity suited for institutional operations.",
-      icon: "business",
+        "From corporate IT parks like the BEO Software Park to luxury residential landmarks, we execute large-scale projects with seamless precision. Our focus is on timeless architectural aesthetics combined with modern functional efficiency.",
+      icon: "corporate_fare",
       features: [
         "High-Rise Commercial Plazas",
-        "Software Park IT Complexes",
-        "Statutory & Local Clearances",
-        "Post-Tensioned Slab Construction",
+        "Premium Multi-Family Apartments",
+        "Corporate Headquarters & Software Parks",
       ],
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuC5MLWeOyznAcBeRdldBJyt8WUqdmL7-pXDzoqQyslo1Vc6VYj4q6qzDWV2TMz3VyKZcJio-04PE2yFPpwR4iOPamP1CBnWGsfsHLqbdRJjgKUUgb0lvTNzxUsWBPQ-DY27MO6EvjFd50PNaRNaJ4sP37ndiUw8Zf7RiHtflVTGmNcFnJ1_ieJED8nJNvaYX4ARWPnIl-rVpI8LImtgHZII9EJwfPXdM5PsodZGeIBccG690EhrY2IQwyR2kJ81iRcZP2Eeitb1nro",
-    },
-    {
-      id: "consulting",
-      title: "Architectural & Planning Consultation",
-      subtitle: "Design & Project Blueprinting",
-      description:
-        "Get comprehensive design and project blueprinting services. We work closely with leading visualizers to formulate 3D elevations, spatial planning models, and structural drafting that balance light, space, and materials.",
-      icon: "architecture",
-      features: [
-        "Spatial Planning & Layouts",
-        "3D Elevation Visualizations",
-        "Structural Drafting & Auditing",
-        "Detailed Project Budgeting",
-      ],
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAwxb0bi9kKxEr-xamPgP9XLsMFxMjaYeveUi8VR44EDRJQbhnQ7d1PBEUXGi2fQV7maRPK8WHtcskM-sqEwiDGmNCqhhbkhwqkSQdlkH_Kd48sOQVCT7fCEWmMgA3PboxmyKXPABThgkCfCHISovJvs__ilqi8ad0GqDla6UCc6b8-Qw7C_R3TEF2pZ0RSgk1zKyOGnrIgzoFfDyggiRonWtLTvluotDIDI7ByQTLLqiDgFXREBiQaKm4tLNt0gBXmmOSPlf4tQFs",
+        "https://res.cloudinary.com/sorumlx6/image/upload/v1783449301/BEO-Software-park-Building-Kakkanad-Ernakulam_etooyy.webp",
     },
   ];
 
@@ -78,14 +60,12 @@ export default function Services() {
                 key={service.id}
                 direction={isEven ? "right" : "left"}
                 id={service.id}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${
-                  isEven ? "" : "lg:flex-row-reverse"
-                }`}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${isEven ? "" : "lg:flex-row-reverse"
+                  }`}
               >
                 {/* Image (reordered on desktop based on even/odd) */}
-                <div className={`relative aspect-[4/3] rounded-xl overflow-hidden shadow-2xl ${
-                  isEven ? "lg:order-1" : "lg:order-2"
-                }`}>
+                <div className={`relative aspect-[4/3] rounded-xl overflow-hidden shadow-2xl ${isEven ? "lg:order-1" : "lg:order-2"
+                  }`}>
                   <div className="absolute inset-0 bg-on-background/10 z-10"></div>
                   <img
                     src={service.image}
@@ -95,9 +75,8 @@ export default function Services() {
                 </div>
 
                 {/* Text Content */}
-                <div className={`space-y-6 ${
-                  isEven ? "lg:order-2" : "lg:order-1"
-                }`}>
+                <div className={`space-y-6 ${isEven ? "lg:order-2" : "lg:order-1"
+                  }`}>
                   <div className="flex gap-4 items-center">
                     <div className="w-12 h-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center">
                       <span className="material-symbols-outlined text-2xl">{service.icon}</span>

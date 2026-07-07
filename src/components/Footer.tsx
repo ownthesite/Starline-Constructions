@@ -52,19 +52,19 @@ export default function Footer() {
             <div className="flex gap-4 items-start">
               <span className="material-symbols-outlined text-secondary mt-1">location_on</span>
               <p className="text-on-surface-variant font-body-md leading-relaxed">
-                2nd Floor, Marian Abode Putharickal, Parambithara Road, Panampilly Nagar, Kochi
+                1st Floor, Marian Abode Putharickal, Parambithara Road, Panampilly Nagar, Kochi
               </p>
             </div>
             <div className="flex gap-4 items-center">
               <span className="material-symbols-outlined text-secondary">call</span>
               <a href="tel:+919446090003" className="text-on-surface-variant hover:text-secondary transition-colors font-body-md">
-                +91 94460 90003
+                +91 94460 90003, +91 94460 90009
               </a>
             </div>
             <div className="flex gap-4 items-center">
               <span className="material-symbols-outlined text-secondary">mail</span>
-              <a href="mailto:info@starlineconstructions.com" className="text-on-surface-variant hover:text-secondary transition-colors font-body-md">
-                info@starlineconstructions.com
+              <a href="mailto:starlineconstructions2017@gmail.com" className="text-on-surface-variant hover:text-secondary transition-colors font-body-md">
+                starlineconstructions2017@gmail.com
               </a>
             </div>
           </div>

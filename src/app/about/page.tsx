@@ -11,7 +11,7 @@ export default function About() {
             Established 1998
           </span>
           <h1 className="font-display-lg text-[32px] md:text-5xl lg:text-[64px] text-on-surface mb-6 font-bold leading-tight">
-            Building Tomorrow's Heritage
+            Building Tomorrow&apos;s Heritage
           </h1>
           <div className="w-24 h-1 bg-secondary mx-auto"></div>
         </FadeIn>
@@ -51,12 +51,12 @@ export default function About() {
 
         <FadeIn direction="left" delay={0.2} className="relative group p-4">
           {/* Offset Border Frame */}
-          <div className="absolute -inset-1 border border-secondary/30 translate-x-6 translate-y-6 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500 rounded-lg"></div>
+          <div className="absolute inset-4 border border-secondary/30 translate-x-6 translate-y-6 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500 rounded-lg"></div>
           <div className="relative overflow-hidden aspect-[4/5] bg-surface-container shadow-2xl rounded-lg">
             <img
               className="w-full h-full object-cover grayscale-[0.2] hover:scale-105 transition-transform duration-700"
               alt="Starline Legacy Architectural Focus"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwxb0bi9kKxEr-xamPgP9XLsMFxMjaYeveUi8VR44EDRJQbhnQ7d1PBEUXGi2fQV7maRPK8WHtcskM-sqEwiDGmNCqhhbkhwqkSQdlkH_Kd48sOQVCT7fCEWmMgA3PboxmyKXPABThgkCfCHISovJvs__ilqi8ad0GqDla6UCc6b8-Qw7C_R3TEF2pZ0RSgk1zKyOGnrIgzoFfDyggiRonWtLTvluotDIDI7ByQTLLqiDgFXREBiQaKm4tLNt0gBXmmOSPlf4tQFs"
+              src="https://res.cloudinary.com/sorumlx6/image/upload/v1783449290/Anasvara_Apartments_at_Maradu_iwpbuz.webp"
             />
           </div>
         </FadeIn>
@@ -73,8 +73,8 @@ export default function About() {
               </span>
               <h3 className="font-headline-lg text-3xl mb-6 font-bold">Our Vision</h3>
               <p className="font-body-lg text-body-lg text-on-surface-variant italic leading-relaxed">
-                "To be the global benchmark for sustainable architectural luxury, where every structure we build becomes
-                a landmark of human ingenuity and environmental harmony."
+                &quot;To be the global benchmark for sustainable architectural luxury, where every structure we build becomes
+                a landmark of human ingenuity and environmental harmony.&quot;
               </p>
             </FadeIn>
 
@@ -100,7 +100,7 @@ export default function About() {
           <h2 className="font-headline-lg text-headline-lg font-bold mb-4">Foundation of Trust</h2>
           <div className="w-16 h-0.5 bg-secondary mx-auto mb-6"></div>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto mb-16">
-            Our core values aren't just words on a wall; they are the pillars that support every project we undertake.
+            Our core values aren&apos;t just words on a wall; they are the pillars that support every project we undertake.
           </p>
         </FadeIn>
 
@@ -158,7 +158,7 @@ export default function About() {
           </h2>
           <p className="font-body-lg text-body-lg text-white/70 max-w-2xl mx-auto mb-12">
             Partner with Starline Constructions to transform your architectural dreams into lasting concrete realities.
-            Let's create something extraordinary together.
+            Let&apos;s create something extraordinary together.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Link href="/contact">

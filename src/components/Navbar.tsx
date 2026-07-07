@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -31,17 +32,26 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 transition-all duration-300 ${
-        scrolled ? "h-16 shadow-md" : "h-20 shadow-sm"
-      }`}
+      className={`fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 transition-all duration-300 ${scrolled ? "h-16 shadow-md" : "h-20 shadow-sm"
+        }`}
     >
       <div className="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-full">
         {/* Logo */}
         <Link
           href="/"
-          className="font-headline-md text-2xl text-on-surface tracking-tight font-semibold hover:text-secondary transition-colors"
+          className="flex items-center gap-3 font-headline-md text-2xl text-on-surface tracking-tight font-semibold hover:text-secondary transition-colors"
         >
-          Starline Constructions
+          <div className="relative w-10 h-10 flex items-center justify-center">
+            <Image
+              src="/logo-crop.png"
+              alt="Starline Logo"
+              width={40}
+              height={40}
+              className="h-10 w-auto object-contain"
+              priority
+            />
+          </div>
+          <span>Starline Constructions</span>
         </Link>
 
         {/* Desktop Nav Links */}
@@ -52,11 +62,10 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`font-label-md text-label-md uppercase tracking-wider transition-colors duration-300 ${
-                  isActive
-                    ? "text-secondary border-b-2 border-secondary pb-1"
-                    : "text-on-surface-variant hover:text-secondary"
-                }`}
+                className={`font-label-md text-label-md uppercase tracking-wider transition-colors duration-300 ${isActive
+                  ? "text-secondary border-b-2 border-secondary pb-1"
+                  : "text-on-surface-variant hover:text-secondary"
+                  }`}
               >
                 {link.name}
               </Link>
@@ -96,9 +105,8 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`font-label-md text-label-md uppercase tracking-wider py-2 border-b border-outline-variant/10 ${
-                    isActive ? "text-secondary font-bold" : "text-on-surface-variant"
-                  }`}
+                  className={`font-label-md text-label-md uppercase tracking-wider py-2 border-b border-outline-variant/10 ${isActive ? "text-secondary font-bold" : "text-on-surface-variant"
+                    }`}
                 >
                   {link.name}
                 </Link>
