@@ -206,13 +206,7 @@ export default function Projects() {
   const videosList = [
     { id: 1, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" },
     { id: 2, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" },
-    { id: 3, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" },
-    { id: 4, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" },
-    { id: 5, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" },
-    { id: 6, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" },
-    { id: 7, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" },
-    { id: 8, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" },
-    { id: 9, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" }
+    { id: 3, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" }
   ];
 
   const ongoingProjects: OngoingProject[] = [
