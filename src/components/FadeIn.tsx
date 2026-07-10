@@ -97,10 +97,12 @@ export function FadeInChild({
   children,
   direction = "up",
   className = "",
+  onClick,
 }: {
   children: ReactNode;
   direction?: "up" | "down" | "left" | "right" | "none";
   className?: string;
+  onClick?: () => void;
 }) {
   const getDirectionOffset = () => {
     switch (direction) {
@@ -134,6 +136,7 @@ export function FadeInChild({
         },
       }}
       className={className}
+      onClick={onClick}
     >
       {children}
     </motion.div>

@@ -31,6 +31,8 @@ interface CompletedProject {
 export default function Projects() {
   const [activeTab, setActiveTab] = useState<"pictures" | "videos" | "clients">("pictures");
   const [searchQuery, setSearchQuery] = useState("");
+  const [tappedIndex, setTappedIndex] = useState<number | null>(null);
+  const [activeVideoId, setActiveVideoId] = useState<number | null>(null);
 
   const projectsList: ProjectItem[] = [
     {
@@ -204,9 +206,20 @@ export default function Projects() {
   ];
 
   const videosList = [
-    { id: 1, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" },
-    { id: 2, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" },
-    { id: 3, title: "Luxury Villa Tour - Kakkanad", subtitle: "Site Progress Video" }
+    {
+      id: 1,
+      title: "Ongoing Apartment – Kakkanad, Vazhakala",
+      subtitle: "Site Progress Video",
+      src: "https://res.cloudinary.com/sorumlx6/video/upload/v1783698818/Kakkanad_vazhakala_ongoing_apartment_1_b3fhgz.webm",
+      thumbnail: "https://res.cloudinary.com/sorumlx6/video/upload/so_0/v1783698818/Kakkanad_vazhakala_ongoing_apartment_1_b3fhgz.jpg",
+    },
+    {
+      id: 2,
+      title: "Ongoing Site – Kadavanthra",
+      subtitle: "Site Progress Video",
+      src: "https://res.cloudinary.com/sorumlx6/video/upload/v1783698816/kadavantra_ongoing_site_fkhqer.webm",
+      thumbnail: "https://res.cloudinary.com/sorumlx6/video/upload/so_0/v1783698816/kadavantra_ongoing_site_fkhqer.jpg",
+    },
   ];
 
   const ongoingProjects: OngoingProject[] = [
@@ -330,14 +343,17 @@ export default function Projects() {
               <FadeInChild
                 key={index}
                 direction="up"
-                className="group relative aspect-[4/3] rounded-xl overflow-hidden shadow-xl bg-surface-container transition-transform duration-300"
+                className="group relative aspect-[4/3] rounded-xl overflow-hidden shadow-xl bg-surface-container transition-transform duration-300 cursor-pointer"
+                onClick={() => setTappedIndex(tappedIndex === index ? null : index)}
               >
                 <img
                   src={project.src}
                   alt={project.alt}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-primary/90 opacity-0 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm group-hover:opacity-100">
+                <div className={`absolute inset-0 bg-primary/90 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm group-hover:opacity-100 ${
+                  tappedIndex === index ? "opacity-100" : "opacity-0"
+                }`}>
                   <div className="space-y-4 w-full max-w-[240px]">
                     <h3 className="text-white font-display-lg text-lg leading-tight font-bold">
                       {project.title}
@@ -370,22 +386,29 @@ export default function Projects() {
               <FadeInChild
                 key={video.id}
                 direction="up"
-                className="relative group cursor-pointer aspect-video bg-surface-container rounded-xl overflow-hidden shadow-lg border border-outline-variant/10"
+                className="relative group cursor-pointer aspect-video bg-on-background rounded-xl overflow-hidden shadow-xl border border-outline-variant/10"
+                onClick={() => setActiveVideoId(video.id)}
               >
-                <div className="absolute inset-0 flex items-center justify-center z-10">
-                  <div className="w-16 h-16 rounded-full bg-secondary/90 flex items-center justify-center text-on-secondary shadow-md group-hover:scale-110 transition-transform duration-300">
+                {/* Cloudinary auto-thumbnail */}
+                <img
+                  src={video.thumbnail}
+                  alt={video.title}
+                  className="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700"
+                />
+                {/* Play button */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-secondary/90 flex items-center justify-center text-on-secondary shadow-xl group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm">
                     <span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>
                       play_arrow
                     </span>
                   </div>
                 </div>
-                {/* Visual Placeholder Graphic using dynamic styling */}
-                <div className="absolute inset-0 bg-cover bg-center bg-surface-container-high opacity-70 group-hover:scale-105 transition-transform duration-700"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent z-10">
+                {/* Title bar */}
+                <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent">
                   <p className="text-secondary font-label-md text-[10px] uppercase tracking-widest mb-1">
                     {video.subtitle}
                   </p>
-                  <h4 className="text-white font-body-lg font-bold">
+                  <h4 className="text-white font-body-lg font-bold text-sm">
                     {video.title}
                   </h4>
                 </div>
@@ -493,6 +516,60 @@ export default function Projects() {
           </FadeIn>
         )}
       </section>
+
+      {/* ── Video Lightbox Modal ── */}
+      {activeVideoId !== null && (() => {
+        const vid = videosList.find((v) => v.id === activeVideoId)!;
+        return (
+          <div
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-10"
+            role="dialog"
+            aria-modal="true"
+            aria-label={vid.title}
+          >
+            {/* Backdrop */}
+            <div
+              className="absolute inset-0 bg-black/80 backdrop-blur-md"
+              onClick={() => setActiveVideoId(null)}
+            />
+
+            {/* Modal card — fixed max-w so the box never changes size */}
+            <div className="relative z-10 w-full max-w-4xl bg-on-background rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+              {/* Header */}
+              <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
+                <div>
+                  <p className="text-secondary font-label-md text-[10px] uppercase tracking-widest mb-0.5">
+                    {vid.subtitle}
+                  </p>
+                  <h3 className="text-white font-body-lg font-bold text-base">
+                    {vid.title}
+                  </h3>
+                </div>
+                <button
+                  onClick={() => setActiveVideoId(null)}
+                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
+                  aria-label="Close video"
+                >
+                  <span className="material-symbols-outlined text-xl">close</span>
+                </button>
+              </div>
+
+              {/* Fixed 16:9 video box — portrait vids letterbox, landscape vids fill */}
+              <div className="relative w-full aspect-video bg-black">
+                <video
+                  key={vid.id}
+                  src={vid.src}
+                  poster={vid.thumbnail}
+                  className="absolute inset-0 w-full h-full object-contain"
+                  controls
+                  autoPlay
+                  playsInline
+                />
+              </div>
+            </div>
+          </div>
+        );
+      })()}
     </main>
   );
 }
