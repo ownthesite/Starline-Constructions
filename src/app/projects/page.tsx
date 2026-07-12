@@ -36,11 +36,11 @@ export default function Projects() {
 
   const projectsList: ProjectItem[] = [
     {
-      alt: "Residential Villa Panampilly Nagar",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449309/Residential-villa-construction-Panampilly-Nagar-Ernakulam_ukhgew.webp",
-      title: "Residential Villa Panampilly Nagar",
-      location: "Panampilly Nagar",
-      architect: "Jibu & Thomas",
+      alt: "Anasvara Souparnika Elamakkara",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449291/Anasvara-Souparnika-Anaswvara-Builders-Elamakkara-Kochi_x065pm.webp",
+      title: "Anasvara Souparnika Elamakkara",
+      location: "Maradu",
+      architect: "M/s Mathew & Saira",
       construction: "Starline Constructions"
     },
     {
@@ -68,6 +68,46 @@ export default function Projects() {
       construction: "Starline Constructions"
     },
     {
+      alt: "Residential Building Edathala",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449308/Residential-building-construction-Edathala-Kakkanad-Ernakulam_l4tmhd.webp",
+      title: "Residential Building Edathala",
+      location: "Edathala",
+      architect: "M/s Mathew & Saira",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Residential for Mr.Suresh",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449299/Ar._Silpi._Residential_for_Mr.Suresh_dxp3tb.webp",
+      title: "Residential for Mr.Suresh",
+      location: "Karimughal, Ernakulam",
+      architect: "Jibu & Thomas",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Commercial Building Palarivattom",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449302/Commercial-building-construction-palarivattom-Ernakulam_oimpzm.webp",
+      title: "Commercial Building Palarivattom",
+      location: "Palarivattom",
+      architect: "M/s Mathew & Saira",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Baba Tourist Home",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449294/Ar._Jibu_Thomas._Residential_for_Mr._Jai_lal_gmkasu.webp",
+      title: "Baba Tourist Home at Trivandrum",
+      location: "Trivandrum",
+      architect: "Jibu & Thomas",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Kumar group Total Designers",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449292/Ar._Anuj_Gopakumar_Kumar_group_Total_Designers_jvg2ok.webp",
+      title: "Kumar Group Total Designers",
+      location: "Kochi",
+      architect: "Anuj Gopakumar",
+      construction: "Starline Constructions"
+    },
+    {
       alt: "Apartment Building Elamakkara",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449291/Apartment-Building-Construction-Elamakkara-Kochi_k8kqpm.webp",
       title: "Apartment Building Elamakkara",
@@ -84,91 +124,27 @@ export default function Projects() {
       construction: "Starline Constructions"
     },
     {
-      alt: "Residential Building Edathala",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449308/Residential-building-construction-Edathala-Kakkanad-Ernakulam_l4tmhd.webp",
-      title: "Residential Building Edathala",
-      location: "Edathala",
-      architect: "M/s Mathew & Saira",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Anasvara Souparnika Elamakkara",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449291/Anasvara-Souparnika-Anaswvara-Builders-Elamakkara-Kochi_x065pm.webp",
-      title: "Anasvara Souparnika Elamakkara",
-      location: "Maradu",
-      architect: "M/s Mathew & Saira",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Commercial Building Palarivattom",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449302/Commercial-building-construction-palarivattom-Ernakulam_oimpzm.webp",
-      title: "Commercial Building Palarivattom",
-      location: "Palarivattom",
-      architect: "M/s Mathew & Saira",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Parekkattu Plaza Ernakulam",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449306/Parekkattu-plaza-Karikkamuri-Elamkulam-Ernakulam_wc2foz.webp",
-      title: "Parekkattu Plaza",
-      location: "Elamkulam",
-      architect: "Ar.Jayanand Kilikar",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Baba Tourist Home",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449294/Ar._Jibu_Thomas._Residential_for_Mr._Jai_lal_gmkasu.webp",
-      title: "Baba Tourist Home at Trivandrum",
-      location: "Trivandrum",
-      architect: "Jibu & Thomas",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Securus Commercial Building",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449299/Ar.Avishkar_Commercial_Building_at_Panampilly_Nagar_for_Securus_p9pwlj.webp",
-      title: "Securus Commercial Building",
-      location: "Panampilly Nagar",
-      architect: "Arch. Avishkar",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Residential for Mr.Suresh",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449299/Ar._Silpi._Residential_for_Mr.Suresh_dxp3tb.webp",
-      title: "Residential for Mr.Suresh",
-      location: "Karimughal, Ernakulam",
-      architect: "Jibu & Thomas",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Residential for Mr. Jobilal",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449295/Ar._Jibu_Thomas._Residential_for_Mr._Jobilal_d6jh68.webp",
-      title: "Residential for Mr. Jobilal",
-      location: "Nellimattom",
-      architect: "Jibu & Thomas",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Residential for Mr. Aslam",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449298/Ar._Silpi._Residential_for_Mr._Aslam_jmaiav.webp",
-      title: "Residential for Mr. Aslam",
-      location: "Kochi",
-      architect: "Silpi Architects",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Kumar group Total Designers",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449292/Ar._Anuj_Gopakumar_Kumar_group_Total_Designers_jvg2ok.webp",
-      title: "Kumar Group Total Designers",
-      location: "Kochi",
-      architect: "Anuj Gopakumar",
-      construction: "Starline Constructions"
-    },
-    {
       alt: "Apartment Complex",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449290/Anasvara_Apartments_at_Maradu_iwpbuz.webp",
       title: "Anasvara Apartments",
       location: "Maradu",
       architect: "Ar. Arjun",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Modern Estate",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449293/Ar._Jibu_Thomas_Residencial_bldng_of_Mr._Thomas_Cherian_rty4r2.webp",
+      title: "Residence of Mr. Thomas Cherian",
+      location: "Kochi",
+      architect: "Ar. Jibu & Thomas",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Residential Villa Panampilly Nagar",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449309/Residential-villa-construction-Panampilly-Nagar-Ernakulam_ukhgew.webp",
+      title: "Residential Villa Panampilly Nagar",
+      location: "Panampilly Nagar",
+      architect: "Jibu & Thomas",
       construction: "Starline Constructions"
     },
     {
@@ -196,11 +172,35 @@ export default function Projects() {
       construction: "Starline Constructions"
     },
     {
-      alt: "Modern Estate",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449293/Ar._Jibu_Thomas_Residencial_bldng_of_Mr._Thomas_Cherian_rty4r2.webp",
-      title: "Residence of Mr. Thomas Cherian",
+      alt: "Parekkattu Plaza Ernakulam",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449306/Parekkattu-plaza-Karikkamuri-Elamkulam-Ernakulam_wc2foz.webp",
+      title: "Parekkattu Plaza",
+      location: "Elamkulam",
+      architect: "Ar.Jayanand Kilikar",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Securus Commercial Building",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449299/Ar.Avishkar_Commercial_Building_at_Panampilly_Nagar_for_Securus_p9pwlj.webp",
+      title: "Securus Commercial Building",
+      location: "Panampilly Nagar",
+      architect: "Arch. Avishkar",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Residential for Mr. Jobilal",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449295/Ar._Jibu_Thomas._Residential_for_Mr._Jobilal_d6jh68.webp",
+      title: "Residential for Mr. Jobilal",
+      location: "Nellimattom",
+      architect: "Jibu & Thomas",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Residential for Mr. Aslam",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449298/Ar._Silpi._Residential_for_Mr._Aslam_jmaiav.webp",
+      title: "Residential for Mr. Aslam",
       location: "Kochi",
-      architect: "Ar. Jibu & Thomas",
+      architect: "Silpi Architects",
       construction: "Starline Constructions"
     },
   ];
@@ -351,9 +351,8 @@ export default function Projects() {
                   alt={project.alt}
                   className="w-full h-full object-cover"
                 />
-                <div className={`absolute inset-0 bg-primary/90 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm group-hover:opacity-100 ${
-                  tappedIndex === index ? "opacity-100" : "opacity-0"
-                }`}>
+                <div className={`absolute inset-0 bg-primary/90 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-8 backdrop-blur-sm group-hover:opacity-100 ${tappedIndex === index ? "opacity-100" : "opacity-0"
+                  }`}>
                   <div className="space-y-4 w-full max-w-[240px]">
                     <h3 className="text-white font-display-lg text-lg leading-tight font-bold">
                       {project.title}
