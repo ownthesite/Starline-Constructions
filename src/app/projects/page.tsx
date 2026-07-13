@@ -39,12 +39,12 @@ export default function Projects() {
       alt: "Anasvara Souparnika Elamakkara",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449291/Anasvara-Souparnika-Anaswvara-Builders-Elamakkara-Kochi_x065pm.webp",
       title: "Anasvara Souparnika Elamakkara",
-      location: "Maradu",
+      location: "Elamakkara",
       architect: "M/s Mathew & Saira",
       construction: "Starline Constructions"
     },
     {
-      alt: "BEO Software Park Kakkanad",
+      alt: "Beo Software Commercial Building",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449301/BEO-Software-park-Building-Kakkanad-Ernakulam_etooyy.webp",
       title: "BEO Software Park",
       location: "Kakkanadu",
@@ -64,31 +64,23 @@ export default function Projects() {
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449307/Residential_Building_of_Mr._Cherian_Varghese_Kadavanthra_Kallupaalam_tjh9o6.webp",
       title: "Residential Building of Mr. Cherian Varghese",
       location: "Kadavanthra Kallupaalam",
-      architect: "Jibu & Thomas",
+      architect: "M/s. Mathew & Saira",
       construction: "Starline Constructions"
     },
     {
       alt: "Residential Building Edathala",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449308/Residential-building-construction-Edathala-Kakkanad-Ernakulam_l4tmhd.webp",
-      title: "Residential Building Edathala",
-      location: "Edathala",
+      title: "Residential Building of Mr.M.C.Raju",
+      location: "Edachira",
       architect: "M/s Mathew & Saira",
       construction: "Starline Constructions"
     },
     {
-      alt: "Residential for Mr.Suresh",
+      alt: "Commercial Building for Mr.Suresh",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449299/Ar._Silpi._Residential_for_Mr.Suresh_dxp3tb.webp",
       title: "Residential for Mr.Suresh",
       location: "Karimughal, Ernakulam",
-      architect: "Jibu & Thomas",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Commercial Building Palarivattom",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449302/Commercial-building-construction-palarivattom-Ernakulam_oimpzm.webp",
-      title: "Commercial Building Palarivattom",
-      location: "Palarivattom",
-      architect: "M/s Mathew & Saira",
+      architect: "Ar. Silpi",
       construction: "Starline Constructions"
     },
     {
@@ -100,11 +92,51 @@ export default function Projects() {
       construction: "Starline Constructions"
     },
     {
+      alt: "Apartment Complex",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449290/Anasvara_Apartments_at_Maradu_iwpbuz.webp",
+      title: "Anasvara Apartments",
+      location: "Maradu",
+      architect: "Ar. Arjun",
+      construction: "Starline Constructions"
+    },
+    {
       alt: "Kumar group Total Designers",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449292/Ar._Anuj_Gopakumar_Kumar_group_Total_Designers_jvg2ok.webp",
       title: "Kumar Group Total Designers",
       location: "Kochi",
       architect: "Anuj Gopakumar",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Modern Estate",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449293/Ar._Jibu_Thomas_Residencial_bldng_of_Mr._Thomas_Cherian_rty4r2.webp",
+      title: "Residence of Mr. Thomas Cherian",
+      location: "Kochi",
+      architect: "Ar. Jibu & Thomas",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Modern Villa Design",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449295/Ar._Mathew_Saira_Residential_Bldng_of_Ar._Mathew_Saira_kya33w.webp",
+      title: "Residence of Mr.Satheesh & Smitha",
+      location: "Edathala",
+      architect: "Ar. Mathew & Saira",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Sparkle Scapes",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449300/Ar.Jibu_Thomas_Sparkle_Homes_Perandoor_ogyhll.webp",
+      title: "Sparkle Scapes",
+      location: "Elamakkara",
+      architect: "Ar.Jibu&Thomas",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Commercial Building Palarivattom",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449302/Commercial-building-construction-palarivattom-Ernakulam_oimpzm.webp",
+      title: "Commercial Building Palarivattom",
+      location: "Palarivattom",
+      architect: "M/s Mathew & Saira",
       construction: "Starline Constructions"
     },
     {
@@ -124,51 +156,11 @@ export default function Projects() {
       construction: "Starline Constructions"
     },
     {
-      alt: "Apartment Complex",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449290/Anasvara_Apartments_at_Maradu_iwpbuz.webp",
-      title: "Anasvara Apartments",
-      location: "Maradu",
-      architect: "Ar. Arjun",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Modern Estate",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449293/Ar._Jibu_Thomas_Residencial_bldng_of_Mr._Thomas_Cherian_rty4r2.webp",
-      title: "Residence of Mr. Thomas Cherian",
-      location: "Kochi",
-      architect: "Ar. Jibu & Thomas",
-      construction: "Starline Constructions"
-    },
-    {
       alt: "Residential Villa Panampilly Nagar",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449309/Residential-villa-construction-Panampilly-Nagar-Ernakulam_ukhgew.webp",
       title: "Residential Villa Panampilly Nagar",
       location: "Panampilly Nagar",
       architect: "Jibu & Thomas",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Sparkle Scapes",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449300/Ar.Jibu_Thomas_Sparkle_Homes_Perandoor_ogyhll.webp",
-      title: "Sparkle Scapes",
-      location: "Perandoor",
-      architect: "Ar.Jibu",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Modern Villa Design",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449295/Ar._Mathew_Saira_Residential_Bldng_of_Ar._Mathew_Saira_kya33w.webp",
-      title: "Residence of Mr.Satheesh & Smitha",
-      location: "Kochi",
-      architect: "Ar. Mathew & Saira",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Classic Villa",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449297/Ar._Mathew_Saira_Residential_Bldng_of_Mrs_Gleena_Arun_bdnba4.webp",
-      title: "Residence of Mrs. Gleena Arun",
-      location: "Kochi",
-      architect: "Ar. Mathew & Saira",
       construction: "Starline Constructions"
     },
     {
@@ -193,6 +185,14 @@ export default function Projects() {
       title: "Residential for Mr. Jobilal",
       location: "Nellimattom",
       architect: "Jibu & Thomas",
+      construction: "Starline Constructions"
+    },
+    {
+      alt: "Classic Villa",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449297/Ar._Mathew_Saira_Residential_Bldng_of_Mrs_Gleena_Arun_bdnba4.webp",
+      title: "Residence of Mrs. Gleena Arun",
+      location: "Kochi",
+      architect: "Ar. Mathew & Saira",
       construction: "Starline Constructions"
     },
     {
