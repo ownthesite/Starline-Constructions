@@ -23,12 +23,14 @@ export default function Services() {
       title: "Large-Scale Construction",
       subtitle: "Commercial & Luxury",
       description:
-        "From corporate IT parks like the BEO Software Park to luxury residential landmarks, we execute large-scale projects with seamless precision. Our focus is on timeless architectural aesthetics combined with modern functional efficiency.",
+        "From corporate IT parks like the BEO Software Park to hospitals, theatres, commercial complexes, and luxury residences, we deliver large-scale projects with precision. Combining timeless design with modern functionality, we create spaces built for quality, efficiency, and lasting impact.",
       icon: "corporate_fare",
       features: [
         "High-Rise Commercial Plazas",
         "Premium Multi-Family Apartments",
         "Corporate Headquarters & Software Parks",
+        "Hospitals,Theatres",
+        "Commercial Complexes",
       ],
       image:
         "https://res.cloudinary.com/sorumlx6/image/upload/v1783449301/BEO-Software-park-Building-Kakkanad-Ernakulam_etooyy.webp",
@@ -113,6 +115,58 @@ export default function Services() {
               </FadeIn>
             );
           })}
+        </div>
+      </section>
+
+      {/* Leading Architects List */}
+      <section className="py-16 bg-surface-container-low border-t border-outline-variant/20">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+          <FadeIn className="mb-10">
+            <h2 className="font-display-lg text-2xl md:text-3xl text-on-surface font-bold mb-3">
+              Our Leading Architects — Kochi, Kerala
+            </h2>
+            <div className="w-16 h-0.5 bg-secondary"></div>
+          </FadeIn>
+          <FadeIn direction="up">
+            <div className="overflow-x-auto rounded-xl border border-outline-variant/20 shadow-sm">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-on-background text-white">
+                    <th className="text-left px-6 py-4 font-label-md uppercase tracking-widest text-[11px]">Name</th>
+                    <th className="text-left px-6 py-4 font-label-md uppercase tracking-widest text-[11px]">Firm / Designation</th>
+                    <th className="text-left px-6 py-4 font-label-md uppercase tracking-widest text-[11px]">Contact</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { name: "Ar. Mathew", firm: "Mathew & Saira Architects", phone: "9847045554" },
+                    { name: "Ar. Jibu John", firm: "Jibu & Thomas Architects", phone: "9846064916" },
+                    { name: "Ar. Anuj", firm: "Kumar Group Total Designers", phone: "9846246464" },
+                    { name: "Ar. Jayanandh Killikar", firm: "Kilikkar Architects", phone: "9447024510" },
+                    { name: "Mr. Muhammed Aslam", firm: "Entrepreneur", phone: "9895556667" },
+                    { name: "Mr. Sarji Muhammedali", firm: "CEO Citrus Informatics", phone: "9847054179" },
+                    { name: "Mr. Varghese Nettikadan", firm: "Sparkle Homes", phone: "9447036618" },
+                    { name: "Mr. Arun Vijayakumar", firm: "Ansvara Properties", phone: "8086257475" },
+                    { name: "Mr. George Panicker", firm: "SL. Ventures, Palarivatom", phone: "9447013547" },
+                    { name: "Mr. Jossy Joseph", firm: "Central Excise Kochi", phone: "9447209225" },
+                    { name: "Mr. Raju", firm: "Central Excise Kochi", phone: "9447326115" },
+                    { name: "Mrs. Gleena Arun", firm: "Exe. Engineer KSEB", phone: "9496009133" },
+                  ].map((row, i) => (
+                    <tr
+                      key={i}
+                      className={`border-t border-outline-variant/20 transition-colors duration-200 hover:bg-secondary/5 ${i % 2 === 0 ? "bg-surface" : "bg-surface-container-low"}`}
+                    >
+                      <td className="px-6 py-4 font-body-md text-on-surface font-semibold whitespace-nowrap">{row.name}</td>
+                      <td className="px-6 py-4 font-body-md text-on-surface-variant">{row.firm}</td>
+                      <td className="px-6 py-4 font-body-md text-secondary font-medium whitespace-nowrap">
+                        <a href={`tel:${row.phone}`} className="hover:underline">{row.phone}</a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </FadeIn>
         </div>
       </section>
 

@@ -208,7 +208,7 @@ export default function Home() {
           <div className="relative">
             {/* Progress Line */}
             <div className="hidden md:block absolute top-[24px] left-0 w-full h-[1px] bg-outline-variant/50 z-0"></div>
-            <StaggerChildren delay={0.2} staggerDelay={0.15} className="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+            <StaggerChildren delay={0.2} staggerDelay={0.15} className="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
               {/* Step 1 */}
               <FadeInChild direction="up" className="flex flex-col">
                 <div className="w-12 h-12 bg-on-background text-white rounded-full flex items-center justify-center font-display-lg text-[20px] mb-8 ring-8 ring-surface-container-low font-bold">
@@ -226,29 +226,17 @@ export default function Home() {
                 <div className="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-display-lg text-[20px] mb-8 ring-8 ring-surface-container-low font-bold">
                   02
                 </div>
-                <h4 className="font-label-md text-on-surface uppercase tracking-widest mb-4 font-bold">
-                  Design &amp; Planning
-                </h4>
-                <p className="text-on-surface-variant text-body-md leading-relaxed">
-                  Creating detailed blueprints, 3D visualizations, and obtaining all necessary statutory approvals.
-                </p>
-              </FadeInChild>
-              {/* Step 3 */}
-              <FadeInChild direction="up" className="flex flex-col">
-                <div className="w-12 h-12 bg-on-background text-white rounded-full flex items-center justify-center font-display-lg text-[20px] mb-8 ring-8 ring-surface-container-low font-bold">
-                  03
-                </div>
-                <h4 className="font-label-md text-on-surface uppercase tracking-widest mb-4 font-bold">
+                <h4 className="font-label-md text-secondary uppercase tracking-widest mb-4 font-bold">
                   Construction
                 </h4>
                 <p className="text-on-surface-variant text-body-md leading-relaxed">
                   Groundbreaking and rigorous execution of structure and masonry under expert supervision.
                 </p>
               </FadeInChild>
-              {/* Step 4 */}
+              {/* Step 3 */}
               <FadeInChild direction="up" className="flex flex-col">
                 <div className="w-12 h-12 bg-on-background text-white rounded-full flex items-center justify-center font-display-lg text-[20px] mb-8 ring-8 ring-surface-container-low font-bold">
-                  04
+                  03
                 </div>
                 <h4 className="font-label-md text-on-surface uppercase tracking-widest mb-4 font-bold">
                   Handover
