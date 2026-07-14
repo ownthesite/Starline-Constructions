@@ -52,6 +52,14 @@ export default function Projects() {
       construction: "Starline Constructions"
     },
     {
+      alt: "Modern Estate",
+      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449293/Ar._Jibu_Thomas_Residencial_bldng_of_Mr._Thomas_Cherian_rty4r2.webp",
+      title: "Residence of Mr. Thomas Cherian",
+      location: "Puthupally, Kottayam",
+      architect: "Ar. Jibu & Thomas",
+      construction: "Starline Constructions"
+    },
+    {
       alt: "Good People Vismaya Kaloor",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449304/Good-people-Vismaya-Kaloor-Kochi_wbhksj.webp",
       title: "Good People Vismaya",
@@ -79,7 +87,7 @@ export default function Projects() {
       alt: "Commercial Building for Mr.Suresh",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449299/Ar._Silpi._Residential_for_Mr.Suresh_dxp3tb.webp",
       title: "Residential for Mr.Suresh",
-      location: "Karimughal, Ernakulam",
+      location: "Palarivattom",
       architect: "Ar. Silpi",
       construction: "Starline Constructions"
     },
@@ -102,17 +110,9 @@ export default function Projects() {
     {
       alt: "Kumar group Total Designers",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449292/Ar._Anuj_Gopakumar_Kumar_group_Total_Designers_jvg2ok.webp",
-      title: "Kumar Group Total Designers",
-      location: "Kochi",
-      architect: "Anuj Gopakumar",
-      construction: "Starline Constructions"
-    },
-    {
-      alt: "Modern Estate",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449293/Ar._Jibu_Thomas_Residencial_bldng_of_Mr._Thomas_Cherian_rty4r2.webp",
-      title: "Residence of Mr. Thomas Cherian",
-      location: "Kochi",
-      architect: "Ar. Jibu & Thomas",
+      title: "Residence of Mr. Sarji",
+      location: "Unichira, Edappally",
+      architect: "Kumar group and Total Designers",
       construction: "Starline Constructions"
     },
     {
@@ -132,18 +132,10 @@ export default function Projects() {
       construction: "Starline Constructions"
     },
     {
-      alt: "Commercial Building Palarivattom",
-      src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449302/Commercial-building-construction-palarivattom-Ernakulam_oimpzm.webp",
-      title: "Commercial Building Palarivattom",
-      location: "Palarivattom",
-      architect: "M/s Mathew & Saira",
-      construction: "Starline Constructions"
-    },
-    {
       alt: "Apartment Building Elamakkara",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449291/Apartment-Building-Construction-Elamakkara-Kochi_k8kqpm.webp",
-      title: "Apartment Building Elamakkara",
-      location: "Elamakkara",
+      title: "Sparkle Homes",
+      location: "Perandoor,Kaloor",
       architect: "Jibu & Thomas",
       construction: "Starline Constructions"
     },
@@ -158,7 +150,7 @@ export default function Projects() {
     {
       alt: "Residential Villa Panampilly Nagar",
       src: "https://res.cloudinary.com/sorumlx6/image/upload/v1783449309/Residential-villa-construction-Panampilly-Nagar-Ernakulam_ukhgew.webp",
-      title: "Residential Villa Panampilly Nagar",
+      title: "Residential Villa for Mr. Joseph John",
       location: "Panampilly Nagar",
       architect: "Jibu & Thomas",
       construction: "Starline Constructions"
@@ -448,7 +440,7 @@ export default function Projects() {
                       <th className="px-6 py-4">Name of Project</th>
                       <th className="px-6 py-4">Client</th>
                       <th className="px-6 py-4">Architect</th>
-                      <th className="px-6 py-4">Contract Value</th>
+
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-outline-variant/10 font-body-md text-sm text-on-surface-variant">
@@ -459,12 +451,12 @@ export default function Projects() {
                           <td className="px-6 py-4 font-bold text-secondary">{project.name}</td>
                           <td className="px-6 py-4">{project.client}</td>
                           <td className="px-6 py-4">{project.architect}</td>
-                          <td className="px-6 py-4">{project.value}</td>
+
                         </tr>
                       ))
                     ) : (
                       <tr>
-                        <td colSpan={5} className="px-6 py-8 text-center text-on-surface-variant">
+                        <td colSpan={4} className="px-6 py-8 text-center text-on-surface-variant">
                           No matching records found.
                         </td>
                       </tr>
@@ -487,7 +479,7 @@ export default function Projects() {
                       <th className="px-6 py-4">Name of Project</th>
                       <th className="px-6 py-4">Client</th>
                       <th className="px-6 py-4">Architect</th>
-                      <th className="px-6 py-4">Value / Year</th>
+
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-outline-variant/10 font-body-md text-sm text-on-surface-variant">
@@ -498,12 +490,12 @@ export default function Projects() {
                           <td className="px-6 py-4 font-bold text-secondary">{project.name}</td>
                           <td className="px-6 py-4">{project.client}</td>
                           <td className="px-6 py-4">{project.architect}</td>
-                          <td className="px-6 py-4">{project.valueYear}</td>
+
                         </tr>
                       ))
                     ) : (
                       <tr>
-                        <td colSpan={5} className="px-6 py-8 text-center text-on-surface-variant">
+                        <td colSpan={4} className="px-6 py-8 text-center text-on-surface-variant">
                           No matching records found.
                         </td>
                       </tr>
