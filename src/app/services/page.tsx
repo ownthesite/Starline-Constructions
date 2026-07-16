@@ -128,39 +128,31 @@ export default function Services() {
             <div className="w-16 h-0.5 bg-secondary"></div>
           </FadeIn>
           <FadeIn direction="up">
-            <div className="overflow-x-auto rounded-xl border border-outline-variant/20 shadow-sm">
+            <div className="max-w-md overflow-hidden rounded-xl border border-outline-variant/20 shadow-sm">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="bg-on-background text-white">
                     <th className="text-left px-6 py-4 font-label-md uppercase tracking-widest text-[11px]">Name</th>
-                    <th className="text-left px-6 py-4 font-label-md uppercase tracking-widest text-[11px]">Firm / Designation</th>
-                    <th className="text-left px-6 py-4 font-label-md uppercase tracking-widest text-[11px]">Contact</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    { name: "Ar. Mathew", firm: "Mathew & Saira Architects", phone: "9847045554" },
-                    { name: "Ar. Jibu John", firm: "Jibu & Thomas Architects", phone: "9846064916" },
-                    { name: "Ar. Anuj", firm: "Kumar Group Total Designers", phone: "9846246464" },
-                    { name: "Ar. Jayanandh Killikar", firm: "Kilikkar Architects", phone: "9447024510" },
-                    { name: "Mr. Muhammed Aslam", firm: "Entrepreneur", phone: "9895556667" },
-                    { name: "Mr. Sarji Muhammedali", firm: "CEO Citrus Informatics", phone: "9847054179" },
-                    { name: "Mr. Varghese Nettikadan", firm: "Sparkle Homes", phone: "9447036618" },
-                    { name: "Mr. Arun Vijayakumar", firm: "Ansvara Properties", phone: "8086257475" },
-                    { name: "Mr. George Panicker", firm: "SL. Ventures, Palarivatom", phone: "9447013547" },
-                    { name: "Mr. Jossy Joseph", firm: "Central Excise Kochi", phone: "9447209225" },
-                    { name: "Mr. Raju", firm: "Central Excise Kochi", phone: "9447326115" },
-                    { name: "Mrs. Gleena Arun", firm: "Exe. Engineer KSEB", phone: "9496009133" },
+                    { name: "Ar. Mathew & Saira" },
+                    { name: "Silpi Architects" },
+                    { name: "Ar. Jibu & Thomas" },
+                    { name: "Kumar Group Total Designers" },
+                    { name: "Inspiration Collective" },
+                    { name: "Kilikkar Architects" },
+                    { name: "Alpha Engrs Consultants" },
+                    { name: "Ar.P.K.R.Menon" },
+                    { name: "Ar.Avishkar" },
+                    { name: "Ar.M/s.Foliage" },
                   ].map((row, i) => (
                     <tr
                       key={i}
                       className={`border-t border-outline-variant/20 transition-colors duration-200 hover:bg-secondary/5 ${i % 2 === 0 ? "bg-surface" : "bg-surface-container-low"}`}
                     >
-                      <td className="px-6 py-4 font-body-md text-on-surface font-semibold whitespace-nowrap">{row.name}</td>
-                      <td className="px-6 py-4 font-body-md text-on-surface-variant">{row.firm}</td>
-                      <td className="px-6 py-4 font-body-md text-secondary font-medium whitespace-nowrap">
-                        <a href={`tel:${row.phone}`} className="hover:underline">{row.phone}</a>
-                      </td>
+                      <td className="px-6 py-4 text-left font-body-md text-on-surface font-semibold whitespace-nowrap">{row.name}</td>
                     </tr>
                   ))}
                 </tbody>
